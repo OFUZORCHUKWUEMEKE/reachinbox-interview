@@ -7,7 +7,7 @@ export class OpenAIService {
 
   constructor() {
     this.openai = new OpenAI({
-      apiKey: "shdhjsdkjsdjsdb",
+      apiKey: process.env.OPENAI_API_KEY,
     });
   }
 
